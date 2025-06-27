@@ -88,8 +88,11 @@ Visual output includes:
 
 📁 /ZenBoard
 ├── 📄 README.md
+
 ├── 📄 zenboard_template.xlsx   # Processed sample dataset
+
 ├── 📄 fields_information.md      # Field definitions & formulas
+
 ├── zenboard_dashboard.twb  # Tableau workbook file
 
 📌 Requirements
