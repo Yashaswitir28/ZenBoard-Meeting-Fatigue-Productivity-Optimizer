@@ -44,6 +44,7 @@ ZenBoard extracts and computes actionable calendar metrics, including:
 7. Location: The venue or medium (e.g., room name, Teams meeting link) where the meeting takes place. Useful for filtering by in-person vs virtual meetings or identifying recurring room bookings 
 
 🧰 Workflow
+
 🔹 Step 1: Data Collection
 1. Export calendar from Microsoft Outlook as .csv.
 2. Ensure fields include: Start Time, End Time, Subject, Attendees, IsRecurring, etc.
