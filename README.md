@@ -92,9 +92,9 @@ Visual output includes:
 
 ├── 📄 Calculated Fields      # Field definitions & formulas
 
-├── Calender.twb  # Tableau workbook file
+├── 📄 Calender.twb  # Tableau workbook file
 
-├── Zenboard.png  # Dashboard image
+├── 📄 Zenboard.png  # Dashboard image
 
 📌 Requirements
 Excel 2016+
