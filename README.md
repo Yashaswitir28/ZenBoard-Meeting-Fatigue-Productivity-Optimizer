@@ -27,18 +27,6 @@ ZenBoard extracts and computes actionable calendar metrics, including:
 | Feature Engineering   | Excel formulas + Tableau Calculated Fields  |
 | Visualization         | Tableau                                     |
 
-🧰 Workflow
-🔹 Step 1: Data Collection
-1. Export calendar from Microsoft Outlook as .csv.
-2. Ensure fields include: Start Time, End Time, Subject, Attendees, IsRecurring, etc.
-
-🔹 Step 2: Data Cleaning (Excel Power Query)
-1. Remove nulls, normalize time formats, drop unnecessary columns.
-2. Convert datetime fields to Excel-compatible timestamps.
-
-🔹 Step 3: Data Wrangling & Feature Engineering
-3. Using Excel & Tableau Calculated Fields:
-
 📌 Field Descriptions
 
 1. Subject : The title or topic of the meeting. This helps identify the purpose of the meeting and is often used to detect recurring patterns when analyzing meetings.
@@ -54,6 +42,18 @@ ZenBoard extracts and computes actionable calendar metrics, including:
 6. Required Attendees: A list (usually semicolon-separated) of email addresses or names of individuals who are required to attend the meeting. This is used to calculate attendee count or analyze meeting load by participant.
 
 7. Location: The venue or medium (e.g., room name, Teams meeting link) where the meeting takes place. Useful for filtering by in-person vs virtual meetings or identifying recurring room bookings 
+
+🧰 Workflow
+🔹 Step 1: Data Collection
+1. Export calendar from Microsoft Outlook as .csv.
+2. Ensure fields include: Start Time, End Time, Subject, Attendees, IsRecurring, etc.
+
+🔹 Step 2: Data Cleaning (Excel Power Query)
+1. Remove nulls, normalize time formats, drop unnecessary columns.
+2. Convert datetime fields to Excel-compatible timestamps.
+
+🔹 Step 3: Data Wrangling & Feature Engineering
+3. Using Excel & Tableau Calculated Fields:
 
 🔹 Step 4: Data Storage
 All processed data stored in .xlsx file, refreshed manually (weekly/monthly).
