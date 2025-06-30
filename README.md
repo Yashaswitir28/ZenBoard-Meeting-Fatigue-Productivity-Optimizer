@@ -90,11 +90,13 @@ Visual output includes:
 
 ├── 📄 README.md
 
-├── 📄 zenboard_template.xlsx   # Processed sample dataset
+├── 📄 ZenBoard dataset (1).xlsx   # Processed sample dataset
 
-├── 📄 fields_information.md      # Field definitions & formulas
+├── 📄 Calculated Fields      # Field definitions & formulas
 
-├── zenboard_dashboard.twb  # Tableau workbook file
+├── Calender.twb  # Tableau workbook file
+
+├── Zenboard.png  # Dashboard image
 
 📌 Requirements
 Excel 2016+
