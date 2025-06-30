@@ -39,23 +39,21 @@ ZenBoard extracts and computes actionable calendar metrics, including:
 🔹 Step 3: Data Wrangling & Feature Engineering
 3. Using Excel & Tableau Calculated Fields:
 
-Field	Description
-1. DND Start/End Time	User-defined deep work blocks
-2. DND Duration	Time between DND start and end
-3. DND Label	Focus category based on duration
-4. FirstMeetingTime	Earliest meeting of the day
-5. LastMeetingTime	Latest meeting of the day
-6. MeetingDuration	Difference between start & end
-7. RecurringFlag	Based on IsRecurring column
-8. AttendeesCount	Parsed from attendee list
-9. %DayUtilized	Total meeting time / 540 minutes
-10. MeetingGap	Time between consecutive meetings
-11. BackToBackFlag	Gap < 10 mins between meetings
-12. LateHourFlag	Meetings post 5:00 PM
-13. LongMeetingCount	Meetings > 60 mins
-14. FatigueScore	Weighted index of total fatigue load
-15. FocusTimeMinutes	Time not occupied by meetings
-16. DailyMeetingCount	Count of meetings per day
+📌 Field Descriptions
+
+1. Subject : The title or topic of the meeting. This helps identify the purpose of the meeting and is often used to detect recurring patterns when analyzing meetings.
+
+2. Start Date: The calendar date when the meeting begins. It is used in time-based calculations like grouping daily metrics or calculating meeting counts per day.
+
+3. Start Time: The specific time the meeting is scheduled to begin. This is crucial for calculating duration, detecting back-to-back meetings, or identifying after-hours events.
+
+4. End Date: The calendar date when the meeting ends. While typically the same as the Start Date, it accounts for multi-day events and is used in time normalization.
+
+5. End Time: The specific time the meeting is scheduled to end. Used alongside Start Time to calculate meeting duration and check if it overlaps with working hours.
+
+6. Required Attendees: A list (usually semicolon-separated) of email addresses or names of individuals who are required to attend the meeting. This is used to calculate attendee count or analyze meeting load by participant.
+
+7. Location: The venue or medium (e.g., room name, Teams meeting link) where the meeting takes place. Useful for filtering by in-person vs virtual meetings or identifying recurring room bookings 
 
 🔹 Step 4: Data Storage
 All processed data stored in .xlsx file, refreshed manually (weekly/monthly).
